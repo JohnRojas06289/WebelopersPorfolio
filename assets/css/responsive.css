@@ -5,7 +5,18 @@
         max-width: 50%;
 	}
 }
-
+/* Responsive de .about-section .about-info en donde para resoluciones menores a 522 se centre el objeto btn-1 outer-shadow hover-in-shadow y se coloquen 2 columnas y 2 filas , dando un espacio entre btn para que se vea de manera ordenada*/
+@media(max-width: 522px){
+	.about-section .about-info{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+		grid-gap: 20px;
+		text-align: center;
+	}
+	.about-section .about-info .btn{
+		margin: 0 auto;
+	}
+}
 @media(max-width: 767px){
 	.contact-section .w-50,
 	.contact-section .contact-item,
